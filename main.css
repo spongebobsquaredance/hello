@@ -1,0 +1,349 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Reset 
+====================== */
+html,
+body,
+.titlepage {
+	height: 100%;
+}
+body {
+	color: #111;
+	font-family: Futura, Helvetica, "Gill Sans", Arial, sans-serif;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+a {
+	color: #111;
+	text-decoration: none;
+}
+
+/* Title Page
+================================ */
+.titlepage {
+	background: #efe8d6;
+}
+header {
+	position: relative;
+	height: 80px;
+}
+.projectlink {
+	display: none;
+}
+.titlepage h1,
+.titlepage h2 {
+	position: absolute;
+	margin-top: 1em;
+}
+.titlepage h1 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	left: 0;
+	bottom: 0;
+}
+.titlepage h2 {
+	font-size: 1.25em;
+	margin-left: 1em;
+	left: 253px;
+	bottom: 0;
+}
+.contactlink {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-transform: uppercase;
+}
+
+/* Intro Text
+================================ */
+.introtxt {
+	line-height: 1.56;
+	width: 85%;
+	max-width: 800px;
+}
+.introtxt h3 {
+	font-size: 3em;
+	margin-top: 3.5em;
+}
+.introtxt p {
+	font-family: Didot, Baskerville, Georgia, serif;
+	font-size: 2.25em;
+	margin-top: .5em;
+}
+
+/* Project Styles
+================================ */
+#projects {
+	overflow: hidden;
+	padding: 5em 0;
+}
+.projectbox {
+	width: 50%;
+	height: 300px;
+	float: left;
+	text-align: center;
+	color: #fff;
+}
+.projectbox a {
+	color: #fff;
+}
+.psite {
+	background-image: url('img/brooklynbridge2.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+.mjsite {
+	background-image: url('img/musicjrnl2.jpg');
+	background-size: cover;
+}
+/* Absolute Center
+=================== */
+.projectbox {
+  position: relative;
+}
+
+.project_txt{
+  width: 100%;
+  height: 23%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.project_txt h4 {
+	font-size: 2em;
+}
+.project_txt h5 {
+	font-size: 1em;
+	text-transform: uppercase;
+	margin-top: 1em;
+}
+/* Hover Styles
+=================== */
+.psite,
+.mjsite {
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+}
+.psite:hover,
+.mjsite:hover {
+	background-image: url('img/black.jpg');
+}
+.psite:hover {
+	background-position: center center;
+}
+
+/* Footer
+================================ */
+footer {
+	background: #958472;
+}
+footer .email {
+	text-transform: uppercase;
+	padding-bottom: 2em;
+}
+footer h6 {
+	padding-bottom: 1.5em;
+}
+
+/* Social Icons
+=================== */
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.svg#icomoon') format('svg'),
+        url('fonts/icomoon.woff') format('woff'),
+        url('fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.social_icons ul {
+	font-family: 'icomoon';
+	font-size: 4em;
+	padding: 48px 0 24px 0;
+}
+.social_icons ul li {
+	display: inline-block;
+}
+.social_icons ul li+li {
+	margin-left: -16px;
+}
+.icon-twitter:before {
+	content: "\e605";
+}
+.icon-linkedin:before {
+	content: "\e604";
+}
+.icon-tumblr:before {
+	content: "\e603";
+}
+.icon-github:before {
+	content: "\e602";
+}
+
+/* Media Queries
+=================== */
+@media screen and (max-width: 1000px) {
+	.introtxt p {
+		font-size: 2em;
+	}
+}
+@media screen and (max-width: 890px) {
+	.introtxt p {
+		font-size: 1.8em;
+	}
+}
+@media screen and (max-width: 810px) {
+	header {
+		height: 96px;
+		text-align: center;
+	}
+	.titlepage h1,
+	.titlepage h2,
+	.contactlink {
+		position: static;
+	}
+	.titlepage h1,
+	.titlepage h2 {
+		display: inline-block;
+		margin-top: 0;
+	}
+	.titlepage h1 {
+		padding-top: .5em;
+	}
+	.contactlink {
+		display: block;
+		padding-top: 16px;
+	}
+	.introtxt {
+		width: 95%;
+	}
+	footer {
+		text-align: center;
+	}
+	footer h6 {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 715px) {
+	.titlepage h1,
+	.titlepage h2 {
+		display: block;
+	}
+	.titlepage h2 {
+		margin-left: 0;
+	}
+	.projectlink,
+	.contactlink {
+		display: inline-block;
+		padding-top: 16px;
+	}
+	.projectlink {
+		text-transform: uppercase;
+	}
+	.contactlink {
+		margin-left: 1em;
+	}
+	.introtxt {
+		width: 100%;
+	}
+	.introtxt h3 {
+		margin-top: 2.5em;
+	}
+	.projectbox {
+		width: 100%;
+		float: none;
+	}
+	.psite {
+		margin-bottom: 2.5em;
+	}
+}
+@media screen and (max-width: 480px) {
+	.titlepage {
+		height: auto;
+	}
+	.introtxt {
+		padding-bottom: 2em;
+	}
+	.introtxt h3 {
+		margin-top: 1em;
+	}
+	.introtxt p {
+		font-size: 1.5em;
+		line-height: 1.4;
+	}
+	footer h6 {
+		font-size: .875em;
+	}
+}
+@media screen and (max-width: 405px) {
+	.project_txt h4 {
+		font-size: 1.5em;
+	}
+	.social_icons ul {
+		font-size: 3.3em;
+	}
+	.email {
+		fonts-size: .875em;
+	}
+	.email a {
+		display: block;
+	}
+}
+
+
+
