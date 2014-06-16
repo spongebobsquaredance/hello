@@ -48,6 +48,7 @@ table {
 }
 /* End of Reset 
 ====================== */
+
 @font-face {
     font-family: 'greekfont';
     src: url('fonts/greekfont.eot');
@@ -58,7 +59,6 @@ table {
     font-weight: normal;
     font-style: normal;
 }
-
 html,
 body,
 .titlepage {
@@ -211,7 +211,8 @@ footer h6 {
 	font-size: 4em;
 	padding: 48px 0 24px 0;
 }
-.social_icons ul li {
+.social_icons ul li,
+.social_icons ul li a {
 	display: inline-block;
 }
 .social_icons ul li a {
@@ -300,9 +301,6 @@ footer h6 {
 	.titlepage {
 		min-height: initial;
 	}
-	footer {
-		height: 22%;
-	}
 }
 @media screen and (max-width: 715px) {
 	.titlepage h1,
@@ -364,16 +362,61 @@ footer h6 {
 	.introtxt h3 {
 		margin-top: .5em;
 	}
+	.projectbox a {
+		font-size: 1.7em;
+	}
 	.social_icons ul {
-		font-size: 3.3em;
+		font-size: 3em;
+	}
+	.social_icons ul li+li {
+		margin-left: -14px;
 	}
 	.email {
-		fonts-size: .875em;
+		font-size: .875em;
 	}
 	.email a {
 		display: block;
 	}
 }
+@media screen and (max-width: 240px) {
+	.wrapper {
+		width: 85%;
+	}
+	.titlepage h1 {
+		font-size: .9em;
+	}
+	.titlepage h2 {
+		font-size: .8em;
+	}
+	.projectlink {
+		font-size: .8em;
+	}
+	.contactlink {
+		margin-left: .5em;
+		font-size: .8em;
+	}
+	.introtxt h3 {
+		margin-top: .1em;
+		font-size: 2em;
+	}
+	.introtxt p {
+		font-size: .8em;
+	}
+	.projectbox a {
+		font-size: 1em;
+	}
+	.social_icons ul {
+		font-size: 2.2em;
+		padding: 24px 0;
+	}
+	footer .email {
+		font-size: .6em;
+	}
+	footer h6 {
+		font-size: .75em;
+	}
+}
+
 
 
 
