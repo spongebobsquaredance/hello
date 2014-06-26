@@ -80,7 +80,7 @@ a {
 /* Title Page
 ================================ */
 .titlepage {
-	background: #ffdade;
+	background: #E4F5F4;
 	height: auto;
 	min-height: 100%;
 }
@@ -138,21 +138,19 @@ header {
 #projects {
 	overflow: hidden;
 	padding: 5em 0;
+	background: #FFFFFFE
 }
 .projectbox {
 	width: 50%;
 	height: 300px;
 	float: left;
 	text-align: center;
-	color: #fff;
 }
 .projectbox h4 {
 	position: relative;
 	height: 100%;
 	width: 100%;
 	-webkit-transition: background 1s ease-in-out;
-	-moz-transition: background 1s ease-in-out;
-	-o-transition: background 1s ease-in-out;
 	transition: background 1s ease-in-out;
 }
 .projectbox a {
@@ -165,12 +163,14 @@ header {
 	-webkit-font-smoothing: antialiased;
 }
 .psite {
-	background-image: url('img/brooklynbridge.jpg');
+	background-image: url('img/brooklynbridge1.jpg');
+	-webkit-background-size: cover cover;
 	background-size: cover;
 	background-position: center center;
 }
 .mjsite {
-	background-image: url('img/musicjrnl.jpg');
+	background-image: url('img/musicjrnl1.jpg');
+	-webkit-background-size: cover cover;
 	background-size: cover;
 }
 
@@ -183,7 +183,7 @@ header {
 /* Footer
 ================================ */
 footer {
-	background: #a49381;
+	background: #796659;
 }
 footer .email {
 	text-transform: uppercase;
@@ -217,12 +217,10 @@ footer h6 {
 }
 .social_icons ul li a {
 	-webkit-transition: color .5s ease-in-out;
-	-moz-transition: color .5s ease-in-out;
-	-o-transition: color .5s ease-in-out;
 	transition: color .5s ease-in-out;
 }
 .social_icons ul li a:hover {
-	color: #ffd7c9;
+	color: #D1D1C2;
 }
 .social_icons ul li+li {
 	margin-left: -16px;
@@ -416,7 +414,3 @@ footer h6 {
 		font-size: .75em;
 	}
 }
-
-
-
-
