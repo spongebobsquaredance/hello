@@ -163,14 +163,12 @@ header {
 	-webkit-font-smoothing: antialiased;
 }
 .psite {
-	background-image: url('img/brooklynbridge1.jpg');
-	-webkit-background-size: cover cover;
+	background-image: url('img/brooklynbridge.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 .mjsite {
-	background-image: url('img/musicjrnl1.jpg');
-	-webkit-background-size: cover cover;
+	background-image: url('img/musicjrnl.jpg');
 	background-size: cover;
 }
 
