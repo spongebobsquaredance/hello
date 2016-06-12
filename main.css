@@ -167,10 +167,11 @@ header {
 	background-size: cover;
 	background-position: center center;
 }
-.mjsite {
-	background-image: url('img/musicjrnl.jpg');
+.spsite {
+	background-image: url('img/smallprojects.jpg');
 	background-size: cover;
 }
+
 
 /* Hover Styles
 =================== */
